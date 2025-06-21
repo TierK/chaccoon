@@ -1,0 +1,34 @@
+{
+  "accounts": [
+    {
+      "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+      "username": "himi",
+      "fullName": "Haim Hen",
+      "userpicUrl": "/assets/images/geek-userpic.png",
+      "bio": "Haim Hen is a software engineer with a passion for building scalable web applications. He has extensive experience in full-stack development and is always eager to learn new technologies.",
+      "skills": [
+        "TypeScript",
+        "Angular",
+        "REST API",
+        "Node.js"
+      ],
+      "createdAt": "2023-01-15T10:00:00Z",
+      "updatedAt": "2023-01-15T10:00:00Z"
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+      "username": "jane.doe",
+      "fullName": "Jane Doe",
+      "userpicUrl": "/assets/images/jane-doe.png",
+      "bio": "Frontend developer specializing in UI/UX design and accessibility.",
+      "skills": [
+        "React",
+        "CSS3",
+        "JavaScript",
+        "Figma"
+      ],
+      "createdAt": "2023-02-20T11:30:00Z",
+      "updatedAt": "2023-02-20T11:30:00Z"
+    }
+  ]
+}

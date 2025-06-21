@@ -1,0 +1,588 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Account Management API",
+    "version": "1.0.0",
+    "description": "API for creating, reading, updating, and deleting user accounts (profile cards)."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000/api/v1",
+      "description": "Local development server"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Accounts",
+      "description": "Operations for managing user accounts"
+    }
+  ],
+  "paths": {
+    "/accounts": {
+      "get": {
+        "summary": "Get a list of all accounts",
+        "operationId": "getAllAccounts",
+        "tags": [
+          "Accounts"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved list of accounts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Account"
+                  }
+                },
+                "examples": {
+                  "example1": {
+                    "value": [
+                      {
+                        "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+                        "username": "himi",
+                        "fullName": "Haim Hen",
+                        "userpicUrl": "/assets/images/geek-userpic.png",
+                        "bio": "Haim Hen is a software engineer with a passion for building scalable web applications. He has extensive experience in full-stack development and is always eager to learn new technologies.",
+                        "skills": [
+                          "TypeScript",
+                          "Angular",
+                          "REST API",
+                          "Node.js"
+                        ],
+                        "createdAt": "2023-01-15T10:00:00Z",
+                        "updatedAt": "2023-01-15T10:00:00Z"
+                      },
+                      {
+                        "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+                        "username": "jane.doe",
+                        "fullName": "Jane Doe",
+                        "userpicUrl": "/assets/images/jane-doe.png",
+                        "bio": "Frontend developer specializing in UI/UX design and accessibility.",
+                        "skills": [
+                          "React",
+                          "CSS3",
+                          "JavaScript",
+                          "Figma"
+                        ],
+                        "createdAt": "2023-02-20T11:30:00Z",
+                        "updatedAt": "2023-02-20T11:30:00Z"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "$ref": "#/components/responses/ServerError"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new account",
+        "operationId": "createAccount",
+        "tags": [
+          "Accounts"
+        ],
+        "requestBody": {
+          "description": "Data for the new account",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountCreate"
+              },
+              "examples": {
+                "newAccount": {
+                  "value": {
+                    "username": "newuser123",
+                    "fullName": "New User",
+                    "userpicUrl": "/assets/images/default-userpic.png",
+                    "bio": "A new user ready to explore!",
+                    "skills": [
+                      "HTML",
+                      "CSS"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Account successfully created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Account"
+                },
+                "examples": {
+                  "createdAccount": {
+                    "value": {
+                      "id": "f0e1d2c3-b4a5-6789-9876-543210fedcba",
+                      "username": "newuser123",
+                      "fullName": "New User",
+                      "userpicUrl": "/assets/images/default-userpic.png",
+                      "bio": "A new user ready to explore!",
+                      "skills": [
+                        "HTML",
+                        "CSS"
+                      ],
+                      "createdAt": "2023-06-20T18:30:00Z",
+                      "updatedAt": "2023-06-20T18:30:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          },
+          "500": {
+            "$ref": "#/components/responses/ServerError"
+          }
+        }
+      }
+    },
+    "/accounts/test_accounts": {
+      "get": {
+        "summary": "Get a list of test accounts",
+        "operationId": "getTestAccounts",
+        "tags": [
+          "Accounts"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved list of test accounts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Account"
+                  }
+                },
+                "examples": {
+                  "example1": {
+                    "value": [
+                      {
+                        "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+                        "username": "himi",
+                        "fullName": "Haim Hen",
+                        "userpicUrl": "/assets/images/geek-userpic.png",
+                        "bio": "Haim Hen is a software engineer with a passion for building scalable web applications. He has extensive experience in full-stack development and is always eager to learn new technologies.",
+                        "skills": [
+                          "TypeScript",
+                          "Angular",
+                          "REST API",
+                          "Node.js"
+                        ],
+                        "createdAt": "2023-01-15T10:00:00Z",
+                        "updatedAt": "2023-01-15T10:00:00Z"
+                      },
+                      {
+                        "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+                        "username": "jane.doe",
+                        "fullName": "Jane Doe",
+                        "userpicUrl": "/assets/images/jane-doe.png",
+                        "bio": "Frontend developer specializing in UI/UX design and accessibility.",
+                        "skills": [
+                          "React",
+                          "CSS3",
+                          "JavaScript",
+                          "Figma"
+                        ],
+                        "createdAt": "2023-02-20T11:30:00Z",
+                        "updatedAt": "2023-02-20T11:30:00Z"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "$ref": "#/components/responses/ServerError"
+          }
+        }
+      }
+    },
+    "/accounts/{accountId}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "accountId",
+          "schema": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "required": true,
+          "description": "Unique identifier of the account",
+          "example": "d290f1ee-6c54-4b01-90e6-d701748f0851"
+        }
+      ],
+      "get": {
+        "summary": "Get an account by ID",
+        "operationId": "getAccountById",
+        "tags": [
+          "Accounts"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved account",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Account"
+                },
+                "examples": {
+                  "example1": {
+                    "value": {
+                      "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+                      "username": "himi",
+                      "fullName": "Haim Hen",
+                      "userpicUrl": "/assets/images/geek-userpic.png",
+                      "bio": "Haim Hen is a software engineer with a passion for building scalable web applications. He has extensive experience in full-stack development and is always eager to learn new technologies.",
+                      "skills": [
+                        "TypeScript",
+                        "Angular",
+                        "REST API",
+                        "Node.js"
+                      ],
+                      "createdAt": "2023-01-15T10:00:00Z",
+                      "updatedAt": "2023-01-15T10:00:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/components/responses/ServerError"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Update an existing account",
+        "operationId": "updateAccount",
+        "tags": [
+          "Accounts"
+        ],
+        "requestBody": {
+          "description": "Partial update of account data",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountUpdate"
+              },
+              "examples": {
+                "updateUsername": {
+                  "value": {
+                    "username": "haim.programmer"
+                  }
+                },
+                "updateSkills": {
+                  "value": {
+                    "skills": [
+                      "TypeScript",
+                      "Python",
+                      "Docker"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Account successfully updated",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Account"
+                },
+                "examples": {
+                  "updatedAccount": {
+                    "value": {
+                      "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+                      "username": "haim.programmer",
+                      "fullName": "Haim Hen",
+                      "userpicUrl": "/assets/images/geek-userpic.png",
+                      "bio": "Haim Hen is a software engineer with a passion for building scalable web applications. He has extensive experience in full-stack development and is always eager to learn new technologies.",
+                      "skills": [
+                        "TypeScript",
+                        "Angular",
+                        "REST API",
+                        "Node.js"
+                      ],
+                      "createdAt": "2023-01-15T10:00:00Z",
+                      "updatedAt": "2023-06-20T18:35:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/components/responses/ServerError"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete an account",
+        "operationId": "deleteAccount",
+        "tags": [
+          "Accounts"
+        ],
+        "responses": {
+          "204": {
+            "description": "Account successfully deleted (no content)"
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/components/responses/ServerError"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Account": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "readOnly": true,
+            "description": "Unique identifier of the account",
+            "example": "d290f1ee-6c54-4b01-90e6-d701748f0851"
+          },
+          "username": {
+            "type": "string",
+            "description": "Unique username (login/handle)",
+            "example": "himi"
+          },
+          "fullName": {
+            "type": "string",
+            "description": "Full name of the user",
+            "example": "Haim Hen"
+          },
+          "userpicUrl": {
+            "type": "string",
+            "format": "url",
+            "description": "URL of the user's profile picture",
+            "example": "/assets/images/geek-userpic.png"
+          },
+          "bio": {
+            "type": "string",
+            "description": "Short description or biography of the user",
+            "example": "Haim Hen is a software engineer with a passion for building scalable web applications. He has extensive experience in full-stack development and is always eager to learn new technologies."
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of user's skills or tags",
+            "example": [
+              "TypeScript",
+              "Angular",
+              "REST API",
+              "Node.js"
+            ]
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true,
+            "description": "Date and time of account creation",
+            "example": "2023-01-15T10:00:00Z"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true,
+            "description": "Date and time of last account update",
+            "example": "2023-01-15T10:00:00Z"
+          }
+        },
+        "required": [
+          "username",
+          "fullName"
+        ]
+      },
+      "AccountCreate": {
+        "type": "object",
+        "description": "Schema for creating a new account (ID is server-generated)",
+        "properties": {
+          "username": {
+            "type": "string",
+            "description": "Unique username (login/handle)",
+            "example": "newuser123"
+          },
+          "fullName": {
+            "type": "string",
+            "description": "Full name of the user",
+            "example": "New User"
+          },
+          "userpicUrl": {
+            "type": "string",
+            "format": "url",
+            "description": "URL of the user's profile picture",
+            "example": "/assets/images/default-userpic.png"
+          },
+          "bio": {
+            "type": "string",
+            "description": "Short description or biography of the user",
+            "example": "A new user ready to explore!"
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of user's skills or tags",
+            "example": [
+              "HTML",
+              "CSS"
+            ]
+          }
+        },
+        "required": [
+          "username",
+          "fullName"
+        ]
+      },
+      "AccountUpdate": {
+        "type": "object",
+        "description": "Schema for partially updating an account (all fields are optional)",
+        "properties": {
+          "username": {
+            "type": "string",
+            "description": "Unique username (login/handle)",
+            "example": "updated.himi"
+          },
+          "fullName": {
+            "type": "string",
+            "description": "Full name of the user",
+            "example": "Haim Hen Updated"
+          },
+          "userpicUrl": {
+            "type": "string",
+            "format": "url",
+            "description": "URL of the user's profile picture",
+            "example": "/assets/images/new-userpic.png"
+          },
+          "bio": {
+            "type": "string",
+            "description": "Short description or biography of the user",
+            "example": "Updated bio for Haim Hen."
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of user's skills or tags",
+            "example": [
+              "TypeScript",
+              "Angular",
+              "Vue.js",
+              "Docker"
+            ]
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "Error message",
+            "example": "The requested account was not found."
+          },
+          "code": {
+            "type": "integer",
+            "format": "int32",
+            "description": "Error code (optional)",
+            "example": 404
+          }
+        }
+      }
+    },
+    "responses": {
+      "NotFound": {
+        "description": "Resource not found",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ErrorResponse"
+            },
+            "examples": {
+              "accountNotFound": {
+                "value": {
+                  "message": "Account with the specified ID not found.",
+                  "code": 404
+                }
+              }
+            }
+          }
+        }
+      },
+      "BadRequest": {
+        "description": "Bad request (invalid input)",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ErrorResponse"
+            },
+            "examples": {
+              "invalidInput": {
+                "value": {
+                  "message": "Invalid data in the request. Please check required fields.",
+                  "code": 400
+                }
+              }
+            }
+          }
+        }
+      },
+      "ServerError": {
+        "description": "Internal server error",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ErrorResponse"
+            },
+            "examples": {
+              "internalError": {
+                "value": {
+                  "message": "An unexpected server error occurred.",
+                  "code": 500
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

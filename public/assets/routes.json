@@ -1,0 +1,5 @@
+{
+  "/api/v1/accounts/test_accounts": "/accounts",
+  "/api/v1/accounts": "/accounts",
+  "/api/v1/accounts/:id": "/accounts/:id"
+}
