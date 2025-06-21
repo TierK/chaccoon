@@ -12,11 +12,8 @@ export interface AccountCreate {
    * Short description or biography of the user
    */
   bio?: string;
-
-  /**
-   * Full name of the user
-   */
-  fullName: string;
+  firstName: string;
+  lastName: string;
 
   /**
    * List of user's skills or tags
@@ -32,4 +29,11 @@ export interface AccountCreate {
    * URL of the user's profile picture
    */
   userpicUrl?: string;
+
+  email?: string;
+  dateOfBirth?: Date;
+  location?: string;
+  website?: string;
+  phoneNumber?: string;
+  isActive: boolean;
 }

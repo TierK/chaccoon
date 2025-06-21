@@ -25,33 +25,22 @@ import { NgOptimizedImage } from '@angular/common';
 export class App implements OnInit {
   protected title = 'chaccoon';
 
-  private profilesService: ApiAccountsService = inject(ApiAccountsService); 
-  profiles: Account[] = [];
+  private apiAccountService: ApiAccountsService = inject(ApiAccountsService); 
+  accounts: Account[] = [];
 
   constructor() {
   
   }
 
   ngOnInit(): void {
-    this.profilesService.getTestAccounts().subscribe({
+    this.apiAccountService.getTestAccounts().subscribe({
       next: (data: Account[]) => {
-        this.profiles = data;
-        console.log('Test profiles loaded from generated API:', this.profiles);
+        this.accounts = data;
+        console.log('Test profiles loaded from generated API:', this.accounts);
       },
       error: (err) => {
         console.error('Error loading profiles from generated API:', err);
       }
     });
-
-    /*
-    this.profilesService.getAllAccounts().subscribe({
-      next: (data: Account[]) => {
-        // ... ваша логика для всех аккаунтов
-      },
-      error: (err) => {
-        // 
-      }
-    });
-    */
   }
 }

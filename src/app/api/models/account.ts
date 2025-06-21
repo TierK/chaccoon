@@ -23,7 +23,8 @@ export interface Account {
    * Unique identifier of the account
    */
   id?: string;
-
+  firstName: string;
+  lastName: string;
   /**
    * List of user's skills or tags
    */
@@ -43,4 +44,10 @@ export interface Account {
    * URL of the user's profile picture
    */
   userpicUrl?: string;
+  email?: string;
+  dateOfBirth?: Date;
+  location?: string;
+  website?: string;
+  phoneNumber?: string;
+  isActive: boolean;
 }

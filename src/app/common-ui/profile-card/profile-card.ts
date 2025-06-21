@@ -12,5 +12,5 @@ import { NgOptimizedImage } from '@angular/common';
 })
 
 export class ProfileCard {
-  @Input() profileData!: Account;
+  @Input() account!: Account;
 }

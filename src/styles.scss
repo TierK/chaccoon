@@ -11,18 +11,29 @@
   flex-shrink: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 body{
     background: var(--dark-color);
     color: var(--light-color);
 }
 
 .skill-tag{
-    padding: 4px 8px;
+    padding: 0 8px;
     border-radius: 3px;
     border: 1px solid var(--light-color);
+    display: inline;
     font-size: 12px;
     font-weight: 700;
-    white-space: nowrap;
+    line-height: 24px;
+    height: 24px;
 }
 
 .btn{
