@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "generate-api": "ng-openapi-gen --config ng-openapi-gen.json"
+    "generate-api": "ng-openapi-gen --config ng-openapi-gen.json",
+    "generate:db": "node generate-db.js",
+    "start:json-server": "npm run generate:db && sleep 1 && json-server --watch public/assets/db.json --routes public/assets/routes.json --port 3000"
   },
   "private": true,
   "dependencies": {
@@ -20,12 +22,14 @@
     "@fontsource/inter": "^5.2.6",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
+    "zone.js": "~0.15.0",
+    "json-server": "^0.17.4" 
   },
   "devDependencies": {
     "@angular/build": "^20.0.0",
     "@angular/cli": "^20.0.0",
     "@angular/compiler-cli": "^20.0.0",
+    "@faker-js/faker": "^9.8.0",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.7.0",
     "karma": "~6.4.0",

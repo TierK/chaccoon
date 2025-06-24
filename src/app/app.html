@@ -1,1 +1,5 @@
-<app-profile-card></app-profile-card>
+<div class="profile-card__wrapper">
+    @for(account of accounts;track account.id){
+    <app-profile-card [account]="account"></app-profile-card>
+}
+</div>
