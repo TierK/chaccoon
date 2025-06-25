@@ -10,8 +10,10 @@ function generateDb() {
   for (let i = 0; i < numberOfAccounts; i++) {
     const firstName = faker.person.firstName();
     const lastName = faker.person.lastName();
-    const userName = faker.internet.username({ firstName, lastName });
-    const email = faker.internet.email({ firstName, lastName });
+    const firstNameLower = firstName.toLowerCase();
+    const lastNameLower = lastName.toLowerCase();
+    const username = `${firstNameLower}.${lastNameLower}`;
+    const email = faker.internet.email({ firstName: username, lastName: ''});
     const bio = faker.lorem.paragraph({ min: 1, max: 3 });
     const userpicUrl = faker.image.avatar();
     const skills = faker.helpers.arrayElements(
@@ -34,7 +36,7 @@ function generateDb() {
       updatedAt: faker.date.recent().toISOString(),
       firstName,
       lastName,
-      userName,
+      username,
       email,
       bio,
       userpicUrl,

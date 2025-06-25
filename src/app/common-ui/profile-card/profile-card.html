@@ -3,12 +3,13 @@
     <div class="userpic-name">
         <img 
             ngSrc = "{{account.userpicUrl}}"
-            alt="userpic"
+            [alt]="account.username"
             width="128"   height="128"  priority
             class="profile-card__userpic">
         <div class="profile-card__name">
             <strong class="h6">{{account.firstName}} {{account.lastName}}</strong>
             <span class="subtitle">{{account.username}}</span>
+            <span class="subtitle">{{account.email}}</span>
         </div>
     </div>
     <div class="profile-card__description">

@@ -2,10 +2,8 @@
 import { ChangeDetectionStrategy, Component, inject, OnInit, ChangeDetectorRef } from '@angular/core';
 import { AsyncPipe, JsonPipe, NgForOf, NgIf } from '@angular/common'; // NgForOf, NgIf
 import { ProfileCard } from "./common-ui/profile-card/profile-card";
-import { ApiAccountsService } from './api/services/api-accounts.service'; 
-import { Account } from './api/models/account';
 import { NgOptimizedImage } from '@angular/common';
-
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -17,30 +15,17 @@ import { NgOptimizedImage } from '@angular/common';
     NgForOf,
     NgIf, 
     AsyncPipe, 
-    NgOptimizedImage
+    NgOptimizedImage,
+    RouterModule // Import RouterModule for routing
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App implements OnInit {
-  protected title = 'chaccoon';
-
-  private apiAccountService: ApiAccountsService = inject(ApiAccountsService); 
-  accounts: Account[] = [];
-
-  constructor() {
-  
-  }
-
+[x: string]: any;
   ngOnInit(): void {
-    this.apiAccountService.getTestAccounts().subscribe({
-      next: (data: Account[]) => {
-        this.accounts = data;
-        console.log('Test profiles loaded from generated API:', this.accounts);
-      },
-      error: (err) => {
-        console.error('Error loading profiles from generated API:', err);
-      }
-    });
+    throw new Error('Method not implemented.');
   }
+  protected title = 'chaccoon';
+  
 }
