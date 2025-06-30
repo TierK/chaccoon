@@ -35,4 +35,5 @@ export interface AccountCreate {
   firstName: string;
   lastName: string;
   email: string;
+  password: string;
 }

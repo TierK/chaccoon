@@ -32,6 +32,7 @@ export interface AccountUpdate {
    * URL of the user's profile picture
    */
   userpicUrl?: string;
+  password?: string;
   firstName?: string;
   lastName?: string;
   email?: string;

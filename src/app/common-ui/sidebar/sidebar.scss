@@ -1,0 +1,14 @@
+.logout-btn {
+  margin-top: auto;
+  font-size: 14px;
+  color: var(--light-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  text-align: left;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}

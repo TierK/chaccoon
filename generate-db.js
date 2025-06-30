@@ -16,6 +16,7 @@ function generateDb() {
     const email = faker.internet.email({ firstName: username, lastName: ''});
     const bio = faker.lorem.paragraph({ min: 1, max: 3 });
     const userpicUrl = faker.image.avatar();
+    const password = faker.internet.password();
     const skills = faker.helpers.arrayElements(
       ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Node.js', 'RxJS',
       'NgRx', 'Git', 'Agile', 'RESTful API', 'SQL', 'MongoDB', 'React', 'Vue.js',
@@ -41,6 +42,7 @@ function generateDb() {
       bio,
       userpicUrl,
       skills,
+      password
     });
   }
 
