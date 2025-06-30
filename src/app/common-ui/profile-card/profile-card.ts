@@ -5,7 +5,7 @@ import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-profile-card',
-  imports: [NgIf, NgOptimizedImage],
+  imports: [NgOptimizedImage],
   templateUrl: './profile-card.html',
   styleUrl: './profile-card.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
