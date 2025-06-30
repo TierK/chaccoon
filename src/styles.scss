@@ -102,3 +102,13 @@ h1{
     font-family: var(--font-family-mono);
     color: var(--light-color);
 }
+
+.app-footer {
+  position: fixed;
+  bottom: 4px;
+  right: 10px;
+  font-size: 11px;
+  color: var(--light-color);
+  opacity: 0.6;
+  z-index: 1000;
+}

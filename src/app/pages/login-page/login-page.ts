@@ -3,13 +3,14 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { AuthService } from '../../auth/auth.service';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { environment } from '../../../environment/environment';
 
 @Component({
   selector: 'app-login-page',
   standalone: true,
   imports: [
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
   ],
   templateUrl: './login-page.html',
   styleUrl: './login-page.scss'
@@ -17,6 +18,7 @@ import { CommonModule } from '@angular/common';
 export class LoginPage {
   authService = inject(AuthService);
   router = inject(Router);
+  environment = environment;
 
   form: FormGroup = new FormGroup({
     username: new FormControl(null, Validators.required),

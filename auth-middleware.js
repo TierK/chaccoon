@@ -3,7 +3,7 @@ module.exports = (req, res, next) => {
     const { username, password } = req.body;
 
     // Test credentials
-    if (username === 'admin' && password === '1234') {
+    if (username === 'geoffrey.johns' && password === '1234') {
       return res.json({ token: 'mock-jwt-token-abc123' });
     } else {
       return res.status(401).json({ message: 'Invalid credentials' });

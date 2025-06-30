@@ -1,182 +1,179 @@
 {
   "accounts": [
     {
-      "id": "7b485a4d-beb6-4bf3-b863-732218f921a0",
-      "createdAt": "2024-10-26T00:43:32.952Z",
-      "updatedAt": "2025-06-30T04:57:43.656Z",
-      "firstName": "Norene",
-      "lastName": "Christiansen",
-      "username": "norene.christiansen",
-      "email": "norene.christiansen_@gmail.com",
-      "bio": "Comminor turbo trans debeo apparatus. Calco spargo suus tubineus adfectus careo depereo uxor. Bonus theologus adversus calamitas conitor.",
-      "userpicUrl": "https://avatars.githubusercontent.com/u/29330367",
+      "id": "024b4eee-4426-4288-a784-8f1723905d0f",
+      "createdAt": "2025-05-24T08:29:43.044Z",
+      "updatedAt": "2025-06-29T23:35:49.471Z",
+      "firstName": "Jerrell",
+      "lastName": "Towne",
+      "username": "jerrell.towne",
+      "email": "jerrell.towne@yahoo.com",
+      "bio": "Apostolus ut sed nulla aggredior earum voluptates attollo vobis. Cribro spargo cunabula.",
+      "userpicUrl": "https://avatars.githubusercontent.com/u/89707035",
       "skills": [
-        "Redux",
+        "PHP",
+        "Sass",
         "Kotlin",
-        "NgRx",
-        "HTML",
-        "Ruby on Rails"
+        "Vue.js",
+        "Agile",
+        "Parcel",
+        "Machine Learning"
       ]
     },
     {
-      "id": "14bf0ad8-498f-442d-a7bf-b6eecb442a57",
-      "createdAt": "2025-01-29T09:34:16.314Z",
-      "updatedAt": "2025-06-30T11:34:17.062Z",
-      "firstName": "Jaren",
+      "id": "635b5bd3-7d92-4a2e-9743-539a86224666",
+      "createdAt": "2025-05-07T20:10:36.016Z",
+      "updatedAt": "2025-06-30T03:07:15.225Z",
+      "firstName": "Benton",
       "lastName": "Ortiz",
-      "username": "jaren.ortiz",
-      "email": "jaren.ortiz_@yahoo.com",
-      "bio": "Desino ducimus umbra vinitor recusandae calamitas carpo.",
-      "userpicUrl": "https://avatars.githubusercontent.com/u/95652797",
+      "username": "benton.ortiz",
+      "email": "benton.ortiz_@hotmail.com",
+      "bio": "Ventosus perferendis aurum.",
+      "userpicUrl": "https://avatars.githubusercontent.com/u/9838019",
       "skills": [
-        "Responsive Design",
-        "C#",
-        "SQL"
+        "Design Patterns",
+        "Webpack",
+        "Less",
+        "TypeScript",
+        "Critical Thinking",
+        "Sass"
       ]
     },
     {
-      "id": "9b484c14-1e82-4374-a8f2-26d8ca4347a6",
-      "createdAt": "2025-03-07T04:54:36.796Z",
-      "updatedAt": "2025-06-29T18:27:39.524Z",
-      "firstName": "Geoffrey",
-      "lastName": "Johns",
-      "username": "geoffrey.johns",
-      "email": "geoffrey.johns_@gmail.com",
-      "bio": "Subito antiquus tres.",
-      "userpicUrl": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/46.jpg",
+      "id": "76858a72-1818-44cc-87f3-c81385836b89",
+      "createdAt": "2024-08-22T16:22:54.801Z",
+      "updatedAt": "2025-06-29T22:34:11.206Z",
+      "firstName": "Mellie",
+      "lastName": "Gutmann",
+      "username": "mellie.gutmann",
+      "email": "mellie.gutmann19@hotmail.com",
+      "bio": "Quis umquam vesica suggero charisma tempora aspernatur. Caput capio deduco curatio praesentium coerceo cado decet aurum unus.",
+      "userpicUrl": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/90.jpg",
+      "skills": [
+        "Parcel",
+        "Azure",
+        "C#",
+        "Cloud Computing",
+        "Sass"
+      ]
+    },
+    {
+      "id": "713ae254-1069-4411-a50b-d98f42f580f4",
+      "createdAt": "2025-03-26T13:54:49.824Z",
+      "updatedAt": "2025-06-30T05:27:50.207Z",
+      "firstName": "Lew",
+      "lastName": "Crist",
+      "username": "lew.crist",
+      "email": "lew.crist.26@gmail.com",
+      "bio": "Convoco culpa confero subvenio mollitia accommodo vulnus.",
+      "userpicUrl": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/96.jpg",
       "skills": [
         "UX/UI Design",
-        "Microservices",
-        "RESTful API",
+        "Data Structures"
+      ]
+    },
+    {
+      "id": "df899480-c78c-48de-8e45-69ff7df24128",
+      "createdAt": "2025-03-10T12:59:09.421Z",
+      "updatedAt": "2025-06-30T11:24:30.706Z",
+      "firstName": "Obie",
+      "lastName": "Bartoletti",
+      "username": "obie.bartoletti",
+      "email": "obie.bartoletti.22@yahoo.com",
+      "bio": "Cubo aedificium claustrum.",
+      "userpicUrl": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/75.jpg",
+      "skills": [
+        "Mentoring",
+        "CSS",
+        "Swift",
+        "Communication"
+      ]
+    },
+    {
+      "id": "b6f997e7-5635-4447-a357-65393e5fe186",
+      "createdAt": "2025-03-23T03:29:51.481Z",
+      "updatedAt": "2025-06-30T05:54:44.053Z",
+      "firstName": "Emmy",
+      "lastName": "Jakubowski",
+      "username": "emmy.jakubowski",
+      "email": "emmy.jakubowski_36@yahoo.com",
+      "bio": "Vulnero trepide decens antea vox aptus adamo.",
+      "userpicUrl": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/38.jpg",
+      "skills": [
+        "RxJS",
         "Angular",
-        "Critical Thinking",
-        "Kotlin",
-        "WebSockets"
+        "Problem Solving",
+        "Vue.js",
+        "UX/UI Design"
       ]
     },
     {
-      "id": "0543002b-689b-4482-b0fc-79bd1073bfe6",
-      "createdAt": "2025-04-12T15:09:41.458Z",
-      "updatedAt": "2025-06-29T22:33:55.349Z",
-      "firstName": "Laney",
-      "lastName": "Shields",
-      "username": "laney.shields",
-      "email": "laney.shields.86@yahoo.com",
-      "bio": "Surgo addo terga demitto veritatis terreo aurum sui. Agnosco eum basium aggero decor eum cetera ager. Trucido cui cui ipsa explicabo claustrum curto adstringo.",
-      "userpicUrl": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/48.jpg",
-      "skills": [
-        "Cybersecurity",
-        "React",
-        "Go",
-        "AWS",
-        "CI/CD",
-        "E2E Testing"
-      ]
-    },
-    {
-      "id": "7ab7ada1-7efc-401c-8e7d-3e2320bc6914",
-      "createdAt": "2024-09-03T23:52:48.947Z",
-      "updatedAt": "2025-06-29T21:06:30.641Z",
-      "firstName": "Hester",
-      "lastName": "Upton",
-      "username": "hester.upton",
-      "email": "hester.upton84@gmail.com",
-      "bio": "Aequus coepi depono repellat confido summopere aestivus. Ulciscor civis pauper umbra trucido adulescens defluo. Non pauper nostrum adamo aer arcesso cribro voluptates concedo.",
-      "userpicUrl": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/11.jpg",
-      "skills": [
-        "Docker",
-        "Go",
-        "MongoDB",
-        "AWS",
-        "Redux",
-        "CI/CD"
-      ]
-    },
-    {
-      "id": "2f231101-6773-4cb2-8829-b2f3702d94f4",
-      "createdAt": "2025-04-11T11:09:47.076Z",
-      "updatedAt": "2025-06-30T05:03:44.336Z",
-      "firstName": "Adan",
-      "lastName": "Reilly",
-      "username": "adan.reilly",
-      "email": "adan.reilly@gmail.com",
-      "bio": "Vulgo bonus verus crepusculum sub aurum sum totidem. Creptio adimpleo tui itaque.",
-      "userpicUrl": "https://avatars.githubusercontent.com/u/18557900",
+      "id": "c6e52850-b60f-4a64-9a7d-d7537f8f9229",
+      "createdAt": "2025-01-13T06:05:10.505Z",
+      "updatedAt": "2025-06-30T17:34:43.591Z",
+      "firstName": "Bette",
+      "lastName": "Rempel",
+      "username": "bette.rempel",
+      "email": "bette.rempel@yahoo.com",
+      "bio": "Sum deprimo decor stips vix depulso. Cernuus amaritudo adulatio amiculum nobis timor arguo aureus. Totus super attonbitus.",
+      "userpicUrl": "https://avatars.githubusercontent.com/u/63801269",
       "skills": [
         "Data Science",
+        "Python",
         "Docker",
-        "Communication",
-        "Data Structures",
-        "Problem Solving"
+        "Machine Learning"
       ]
     },
     {
-      "id": "81e64af2-8417-4637-a699-5eaafb96f926",
-      "createdAt": "2025-01-25T09:10:30.801Z",
-      "updatedAt": "2025-06-30T16:45:53.180Z",
-      "firstName": "Agustin",
-      "lastName": "Maggio-Hoeger",
-      "username": "agustin.maggio-hoeger",
-      "email": "agustin.maggio-hoeger.44@yahoo.com",
-      "bio": "Alius tamen beatus cresco ducimus accusator conventus adeptio subvenio.",
-      "userpicUrl": "https://avatars.githubusercontent.com/u/18049100",
+      "id": "e865d276-0932-447f-ad22-cabff9217048",
+      "createdAt": "2025-04-24T17:27:54.466Z",
+      "updatedAt": "2025-06-30T07:27:34.871Z",
+      "firstName": "Khalil",
+      "lastName": "Moen",
+      "username": "khalil.moen",
+      "email": "khalil.moen29@gmail.com",
+      "bio": "Demergo conor cohaero vinum spiritus somniculosus.",
+      "userpicUrl": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/91.jpg",
       "skills": [
-        "E2E Testing",
-        "MongoDB",
-        "Kubernetes",
-        "Azure",
-        "Redux",
-        "Unit Testing"
-      ]
-    },
-    {
-      "id": "3929fc69-1f90-4de4-be5f-feaf4b487319",
-      "createdAt": "2025-06-04T21:12:52.990Z",
-      "updatedAt": "2025-06-30T17:03:02.531Z",
-      "firstName": "Clifford",
-      "lastName": "Wuckert",
-      "username": "clifford.wuckert",
-      "email": "clifford.wuckert@yahoo.com",
-      "bio": "Suus curatio summisse vinitor comis sonitus utrimque appello tepidus tenax. Caveo deduco toties earum volaticus similique dapifer aperio ultra.",
-      "userpicUrl": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/26.jpg",
-      "skills": [
-        "Redux",
-        "Vuex"
-      ]
-    },
-    {
-      "id": "9c9c0a13-dbd1-40dc-a749-7d527ae85665",
-      "createdAt": "2025-05-14T15:53:19.533Z",
-      "updatedAt": "2025-06-30T17:47:06.285Z",
-      "firstName": "Georgette",
-      "lastName": "Brown",
-      "username": "georgette.brown",
-      "email": "georgette.brown88@gmail.com",
-      "bio": "Aggredior solium cursim. Conspergo arbor confero color. Derelinquo aequus absens verecundia beatus surgo taedium voveo.",
-      "userpicUrl": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/98.jpg",
-      "skills": [
-        "Go",
-        "Azure",
-        "Agile",
-        "Vue.js",
-        "SQL",
+        "Node.js",
+        "WebSockets",
         "Public Speaking",
-        "TypeScript"
+        "Scrum"
       ]
     },
     {
-      "id": "96174c99-68a6-4729-bf83-6fd504322953",
-      "createdAt": "2024-09-20T17:05:53.681Z",
-      "updatedAt": "2025-06-30T09:26:41.270Z",
-      "firstName": "Jarvis",
-      "lastName": "Spencer",
-      "username": "jarvis.spencer",
-      "email": "jarvis.spencer38@gmail.com",
-      "bio": "Vulticulus crudelis et antepono tumultus colo minima sopor. Audeo ascit articulus copia pecus.",
-      "userpicUrl": "https://avatars.githubusercontent.com/u/34402074",
+      "id": "f64e598d-154e-42e8-8306-085f73b62350",
+      "createdAt": "2024-11-22T15:28:03.837Z",
+      "updatedAt": "2025-06-30T11:30:01.380Z",
+      "firstName": "Stefan",
+      "lastName": "Christiansen",
+      "username": "stefan.christiansen",
+      "email": "stefan.christiansen_@yahoo.com",
+      "bio": "Usitas super vitae tumultus caste usitas. Inflammatio cogo demoror atrocitas decor stillicidium. Thermae vester sumptus confugo amaritudo enim adulescens degenero.",
+      "userpicUrl": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/6.jpg",
       "skills": [
-        "Azure",
-        "Problem Solving"
+        "Sass",
+        "Redux",
+        "Webpack"
+      ]
+    },
+    {
+      "id": "30ca903f-89f2-4f99-9064-21c45525b40e",
+      "createdAt": "2024-12-21T01:24:41.199Z",
+      "updatedAt": "2025-06-30T07:40:42.390Z",
+      "firstName": "Vernie",
+      "lastName": "Waters",
+      "username": "vernie.waters",
+      "email": "vernie.waters_@gmail.com",
+      "bio": "Colo utique tabernus bis claro amo avarus vestrum. Animus ustilo aequus eum facere viduo amicitia cena. Spiritus xiphias libero conitor.",
+      "userpicUrl": "https://avatars.githubusercontent.com/u/13865718",
+      "skills": [
+        "Less",
+        "Problem Solving",
+        "Cybersecurity",
+        "Communication",
+        "Public Speaking",
+        "Kotlin"
       ]
     }
   ]

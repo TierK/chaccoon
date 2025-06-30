@@ -4,6 +4,8 @@ import { AsyncPipe, JsonPipe, NgForOf, NgIf } from '@angular/common'; // NgForOf
 import { ProfileCard } from "./common-ui/profile-card/profile-card";
 import { NgOptimizedImage } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { environment } from '../environment/environment';
+
 
 @Component({
   selector: 'app-root',
@@ -22,10 +24,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App implements OnInit {
-[x: string]: any;
+  [x: string]: any;
   ngOnInit(): void {
     throw new Error('Method not implemented.');
-  }
+  };
   protected title = 'chaccoon';
-  
+  environment = environment;
 }
