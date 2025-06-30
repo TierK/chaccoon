@@ -15,7 +15,7 @@ interface AuthResponse {
 export class AuthService {
   http: HttpClient = inject(HttpClient);
   router: Router = inject(Router);
-  baseApiUrl: string = 'http://localhost:3000/api/v1';
+  baseApiUrl: string = 'http://localhost:3000/accounts';
 
   //Method to check if the user is authenticated
   // We use BehaviorSubject to hold the authentication state
@@ -34,7 +34,7 @@ export class AuthService {
   //Method for logging in the user
   // It takes a payload with username and password, sends it to the server, and handles
   login(payload: { username: string; password: string }): Observable<AuthResponse> {
-    return this.http.post<AuthResponse>(`${this.baseApiUrl}/token`, payload)
+    return this.http.post<AuthResponse>(`${this.baseApiUrl}`, payload)
       .pipe(
         tap(response => {
           // If the login is successful, we store the token in localStorage
