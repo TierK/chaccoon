@@ -13,8 +13,10 @@ export interface AccountUpdate {
    */
   bio?: string;
 
-  firstName: string;
-  lastName: string;
+  /**
+   * Full name of the user
+   */
+  fullName?: string;
 
   /**
    * List of user's skills or tags
@@ -30,8 +32,7 @@ export interface AccountUpdate {
    * URL of the user's profile picture
    */
   userpicUrl?: string;
+  firstName?: string;
+  lastName?: string;
   email?: string;
-  location?: string;
-  website?: string;
-  phoneNumber?: string;
 }

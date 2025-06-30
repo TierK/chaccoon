@@ -8,5 +8,9 @@
   "modelIndexFile": true,
   "useUnionTypes": true,
   "useFormControls": false,
-  "useClassNames": true
+  "useClassNames": true,
+  "auth": {
+    "type": "bearer",
+    "tokenGetter": "localStorage.getItem('authToken')"
+  }
 }

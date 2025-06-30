@@ -9,7 +9,7 @@
     "test": "ng test",
     "generate-api": "ng-openapi-gen --config ng-openapi-gen.json",
     "generate:db": "node generate-db.js",
-    "start:json-server": "npm run generate:db && sleep 1 && json-server --watch public/assets/db.json --routes public/assets/routes.json --port 3000"
+    "start:json-server": "npm run generate:db && sleep 1 && json-server --watch public/assets/db.json --routes public/assets/routes.json --middlewares auth-middleware.js --port 3000"
   },
   "private": true,
   "dependencies": {

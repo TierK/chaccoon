@@ -11,6 +11,11 @@
       "description": "Local development server"
     }
   ],
+  "security": [
+  {
+    "bearerAuth": []
+  }
+  ],
   "tags": [
     {
       "name": "Accounts",
@@ -527,6 +532,13 @@
           }
         }
       }
+    },
+    "securitySchemes": {
+        "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      } 
     },
     "responses": {
       "NotFound": {

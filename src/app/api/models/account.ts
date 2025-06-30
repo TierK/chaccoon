@@ -17,19 +17,17 @@ export interface Account {
   /**
    * Full name of the user
    */
-  fullName: string;
+  fullName?: string;
 
   /**
    * Unique identifier of the account
    */
   id?: string;
-  firstName: string;
-  lastName: string;
+
   /**
    * List of user's skills or tags
    */
   skills?: Array<string>;
-  
 
   /**
    * Date and time of last account update
@@ -45,11 +43,7 @@ export interface Account {
    * URL of the user's profile picture
    */
   userpicUrl?: string;
-  email?: string;
-  dateOfBirth?: Date;
-  location?: string;
-  website?: string;
-  phoneNumber?: string;
-  isActive: boolean;
-  token?: string;
+  firstName: string;
+  lastName: string;
+  email: string;
 }
