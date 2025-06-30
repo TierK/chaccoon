@@ -1,9 +1,51 @@
 :host{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    height: 100dvh;
+    align-items: center;
+    align-content: center;
+    margin: 0 5%;
 }
 
-img{
+.brand-name{
+    grid-column: 1 / -1; 
+    height: 250px;
+    width: auto;
+    text-align: center;
+
+}
+.brand-name img{
+    height: 100%;
+    
+}
+
+.login-form{
+    max-width: 300px;
+    padding: 0 20px;
+}
+
+.logo-raccoon{
     width: 400px;
     height: auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+@media (max-width: 650px) {
+
+    :host {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .logo-raccoon {
+    display: none; 
+  }
+
+  .login-form {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
 }

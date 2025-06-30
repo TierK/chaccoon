@@ -29,6 +29,7 @@ export interface Account {
    * List of user's skills or tags
    */
   skills?: Array<string>;
+  
 
   /**
    * Date and time of last account update
@@ -50,4 +51,5 @@ export interface Account {
   website?: string;
   phoneNumber?: string;
   isActive: boolean;
+  token?: string;
 }

@@ -1,2 +1,33 @@
-<form action="" class="login-form"></form>
-<img src="/assets/images/logo.png" alt="logo-raccoon">
+<div class="brand-name">
+    <img src="/assets/images/brand-name.png" alt="Chaccoon">
+</div>
+<form
+    class="login-form" 
+    [formGroup]="form"
+    (ngSubmit)="onSubmit()"
+>
+    <h1 class="h1">Login</h1>
+
+    <label class="cc-control-label mb-16">
+        Username
+        <br>
+        <input
+            formControlName="username"
+            type="text" placeholder="Type Your Username" class="cc-input">
+    </label>
+    <label class="cc-control-label mb-32">
+        Password
+        <br>
+        <input
+            formControlName="password"
+            type="password" placeholder="Type Your Password" class="cc-input">
+    </label>
+
+    <div *ngIf="loginError" class="error-message login-error">
+      {{ loginError }}
+    </div>
+    <button class="btn" type="submit">
+        Shoot
+    </button>
+</form>
+<img src="/assets/images/logo.png" class="logo-raccoon" alt="logo-raccoon">
