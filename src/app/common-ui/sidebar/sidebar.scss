@@ -1,14 +1,39 @@
-.logout-btn {
-  margin-top: auto;
-  font-size: 14px;
-  color: var(--light-color);
+.raccoon-logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
   background: none;
   border: none;
+  color: var(--light-color);
   cursor: pointer;
   padding: 6px 12px;
-  text-align: left;
+
+  .raccoon {
+    display: inline-block;
+    transition: transform 0.6s ease;
+  }
+
+  &:hover .raccoon {
+    transform: rotate(20deg) translateX(4px);
+  }
+
+  &:active .raccoon {
+    animation: disappear 0.6s forwards;
+  }
 
   &:hover {
     color: var(--primary-color);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-90deg) translateX(20px);
   }
 }

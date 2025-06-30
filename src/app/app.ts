@@ -14,8 +14,6 @@ import { environment } from '../environment/environment';
     ProfileCard,
     JsonPipe,
     ProfileCard,
-    NgForOf,
-    NgIf, 
     AsyncPipe, 
     NgOptimizedImage,
     RouterModule // Import RouterModule for routing
