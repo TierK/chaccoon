@@ -1,6 +1,6 @@
 // app.ts
-import { ChangeDetectionStrategy, Component, inject, OnInit, ChangeDetectorRef } from '@angular/core';
-import { AsyncPipe, JsonPipe, NgForOf, NgIf } from '@angular/common'; // NgForOf, NgIf
+import { Component, OnInit } from '@angular/core';
+import { AsyncPipe, JsonPipe } from '@angular/common'; // NgForOf, NgIf
 import { ProfileCard } from "./common-ui/profile-card/profile-card";
 import { NgOptimizedImage } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -13,19 +13,18 @@ import { environment } from '../environment/environment';
   imports: [
     ProfileCard,
     JsonPipe,
-    ProfileCard,
-    AsyncPipe, 
+    AsyncPipe,
     NgOptimizedImage,
-    RouterModule // Import RouterModule for routing
+    RouterModule
   ],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrls: ['./app.scss']
 })
+
 export class App implements OnInit {
   [x: string]: any;
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  };
+  ngOnInit(): void {}
+    
   protected title = 'chaccoon';
   environment = environment;
 }

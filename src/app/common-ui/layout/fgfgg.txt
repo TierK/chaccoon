@@ -1,0 +1,16 @@
+отправляю полный лог :
+
+login-page.ts:34 Attempting login with: {username: 'polly.kautzer', password: 'wQ6JYcWakVtB9rw'}
+auth.service.ts:43 User logged in successfully! Token stored.
+login-page.ts:37 Login successful! {token: 'mock-token-41b7ad3c-eef2-4581-931f-b8537e3638de'}
+search-page.ts:23 Test profiles loaded from generated API: (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+layout.ts:18 
+            
+            
+           GET http://localhost:3000/api/v1/accounts/my_account 404 (Not Found)
+
+
+layout.ts:24 Failed to load current user: HttpErrorResponse {headers: _HttpHeaders, status: 404, statusText: 'Not Found', url: 'http://localhost:3000/api/v1/accounts/my_account', ok: false, …}
+error @ layout.ts:24
+ConsumerObserver2.error @ Subscriber.js:107
+
