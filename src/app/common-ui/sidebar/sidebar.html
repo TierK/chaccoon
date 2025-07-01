@@ -1,3 +1,22 @@
+<img class="raccoon-logo" 
+  src="assets/images/logo-small.png" 
+  alt="Raccoon Logo"
+  class="logo-small ml16 mb20"
+>
+
+<nav>
+  <ul class="main-menu-list">
+    <li *ngFor="let item of menuItems">
+      <button class="main-menu-item">
+        <svg [icon]="item.icon"></svg>
+      <span>{{item.lable}}</span> 
+      </button>
+    </li>
+  </ul>
+</nav>
+
+
+
 <button (click)="logout()" class="raccoon-logout-btn" title="Log out">
   <span class="raccoon">🦝</span>
   Logout
