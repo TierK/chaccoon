@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthService } from '../../auth/auth.service';
 import { Router } from '@angular/router';
@@ -20,6 +20,11 @@ export class LoginPage {
   router = inject(Router);
   environment = environment;
 
+  isPassswordVisible = signal<boolean>(false);
+  togglePasswordVisibility() {
+  this.isPassswordVisible.set(!this.isPassswordVisible());
+}
+
   form: FormGroup = new FormGroup({
     username: new FormControl(null, Validators.required),
     password: new FormControl(null, Validators.required)
@@ -29,7 +34,7 @@ export class LoginPage {
 
   onSubmit() {
     this.loginError = null;
-
+    this.isPassswordVisible.set(true); // Reset password visibility on submit
     if (this.form.valid) {
       console.log('Attempting login with:', this.form.value);
       this.authService.login(this.form.value).subscribe({

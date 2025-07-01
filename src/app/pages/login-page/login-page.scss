@@ -1,47 +1,81 @@
-:host{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    height: 100dvh;
-    align-items: center;
-    align-content: center;
-    margin: 0 5%;
+:host {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  height: 100dvh;
+  align-items: center;
+  align-content: center;
+  margin: 0 5%;
 }
 
-.brand-name{
-    grid-column: 1 / -1; 
-    height: 250px;
-    width: auto;
-    text-align: center;
-
+.brand-name {
+  grid-column: 1 / -1; 
+  height: 250px;
+  width: auto;
+  text-align: center;
 }
-.brand-name img{
-    height: 100%;
-    
+.brand-name img {
+  height: 100%;
 }
 
-.login-form{
-    max-width: 300px;
-    padding: 0 20px;
+.login-form {
+  max-width: 300px;
+  padding: 0 20px;
 }
 
-.logo-raccoon{
-    width: 400px;
-    height: auto;
-    text-align: center;
-    padding: 0 20px;
+.logo-raccoon {
+  width: 400px;
+  height: auto;
+  text-align: center;
+  padding: 0 20px;
 }
 
+.password-input {
+  position: relative;
+}
 
+.password-eye-btn {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.eye-icon.visible {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+  pointer-events: auto;
+}
+
+/* Responsive */
 @media (max-width: 650px) {
+  :host {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 
-    :host {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-
-    .logo-raccoon {
-    display: none; 
+  .logo-raccoon {
+    display: none;
   }
 
   .login-form {
