@@ -1,4 +1,14 @@
 @use 'margins';
+@use '@fontsource/inter/400.css' as *;
+@use '@fontsource/inter/500.css' as *;
+@use '@fontsource/inter/600.css' as *;
+@use '@fontsource/inter/700.css' as *;
+@use '@fontsource/inter/800.css' as *;
+@use '@fontsource/inter/900.css' as *;
+@use '@fontsource/fira-code/400.css' as *;
+@use '@fontsource/fira-code/500.css' as *;
+@use '@fontsource/fira-code/600.css' as *;
+@use '@fontsource/fira-code/700.css' as *;
 
 :root{
     --dark-color: #1A1A1A;

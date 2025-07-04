@@ -28,14 +28,22 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "*.{woff,woff2}",
+                "input": "node_modules/@fontsource/fira-code/files",
+                "output": "assets/fonts/fira-code"
+              },
+              {
+                "glob": "*.{woff,woff2}",
+                "input": "node_modules/@fontsource/inter/files",
+                "output": "assets/fonts/inter"
               }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              
-            ],
+            "scripts": [],
             "baseHref": "/chaccoon/"
           },
           "configurations": {
@@ -52,7 +60,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "outputPath": "dist/chaccoon"
             },
             "development": {
               "optimization": false,
@@ -101,7 +110,8 @@
         "deploy":{
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/chaccoon/"
+            "baseHref": "/chaccoon/",
+            "buildTarget": "chaccoon:build:production"
           }
         }
       }
